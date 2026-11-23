@@ -4,7 +4,6 @@ A **desktop multiplayer quiz game** built with Python, TCP socket programming, m
 
 > **Portfolio / learning project.** No external Python dependencies, no paid services, and no cloud account required. Designed for trusted LAN play—not for exposing directly to the public internet.
 
-![QuizVerse desktop app running a live question](assets/quizverse-preview.png)
 
 *Screenshot captured from the running Tkinter application with a local test server.*
 
