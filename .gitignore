@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# QuizVerse Web
+web/frontend/node_modules/
+web/frontend/dist/
+web/frontend/.env
+web/frontend/.env.local
+web/backend/.env
+.pytest_cache/

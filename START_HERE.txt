@@ -1,0 +1,54 @@
+QUIZVERSE - COMPLETE FRESH PROJECT (BROWSER + DESKTOP)
+====================================================
+
+THIS ZIP CONTAINS ALL FILES:
+  server.py, client.py, quiz_core.py, questions.json
+  web\backend\app.py  (FastAPI + WebSockets)
+  web\frontend\src\App.jsx  (React browser game)
+  web\frontend\src\styles.css
+  start_web_backend.bat, start_web_frontend.bat
+  tests, documentation, desktop screenshot, .gitignore
+
+FOR YOUR EXISTING GITHUB PROJECT (EASIEST)
+------------------------------------------
+1. Close any running QuizVerse servers/clients.
+2. Right-click the ZIP -> Extract All.
+3. In the destination field, paste:
+      C:\Users\91820\Desktop\multiplayer-quiz-system
+4. Click Extract. If asked to replace same-name files, choose Replace.
+   This adds the 'web' folder to your existing project and leaves its
+   hidden .git folder untouched. Do NOT delete .git.
+5. Open VS Code in the existing project folder and run:
+      dir web
+   It must list backend and frontend.
+
+RUN THE BROWSER GAME
+--------------------
+1. Install Python 3.10+ and Node.js 20+ if needed.
+2. Double-click start_web_backend.bat (leave window open).
+3. Double-click start_web_frontend.bat (leave window open).
+4. Open http://localhost:5173 in Chrome.
+5. Create a room; join from another tab/incognito window.
+6. Host clicks Start game.
+
+UPLOAD TO EXISTING GITHUB REPOSITORY
+------------------------------------
+Open a NEW VS Code terminal in the project folder and run ONE LINE AT A TIME:
+      git status
+      git add .
+      git commit -m "Add browser version of QuizVerse"
+      git push origin main
+
+CLOUD DEPLOYMENT
+----------------
+See web\DEPLOY_CHECKLIST.md for Render backend + Vercel frontend.
+
+TROUBLESHOOTING
+---------------
+- If 'dir web' fails, ZIP was extracted to the wrong folder.
+- If 'py' fails, install Python or use 'python'.
+- If 'npm' fails, install Node.js LTS and restart VS Code.
+- If localhost:5173 fails, check BOTH backend and frontend windows.
+- If port 8000 is in use, close other Python API servers first.
+
+This is a demo: web rooms are stored in server memory and reset on restart.
